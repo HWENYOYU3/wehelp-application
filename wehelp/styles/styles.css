@@ -1,0 +1,509 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  /*header completed*/
+}
+body #header {
+  background-color: rgb(39, 39, 39);
+  box-shadow: 0px 3px 5px 0px;
+}
+body #header #weHelp {
+  font-size: 2rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+}
+body main .font-icon {
+  margin-right: 5px;
+  border: 0;
+}
+body main #top-part {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.5);
+}
+body main #top-part .inforPart {
+  position: relative;
+  padding: 1rem;
+  flex: 1 1 420px;
+  margin: 1rem 0.5rem;
+  height: 320px;
+}
+body main #top-part .inforPart .inforChange {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #E0E0E0;
+  animation: bgcChange 3s infinite;
+  animation-direction: alternate;
+  perspective: 1500px;
+  box-shadow: 0px 1px 5px 0px;
+}
+body main #top-part .inforPart .inforChange .format-common {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 10%;
+  left: 10%;
+  padding: 5px;
+  color: white;
+}
+body main #top-part .inforPart .inforChange .format1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  min-height: 250px;
+}
+body main #top-part .inforPart .inforChange .format1 img {
+  display: block;
+  margin-top: 0.5rem;
+  width: 150px;
+}
+body main #top-part .inforPart .inforChange .format1 .info {
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+}
+body main #top-part .inforPart .inforChange .format2 {
+  transform: rotateY(-180deg);
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+body main #top-part .inforPart .inforChange .format2 .name {
+  display: flex;
+  margin-top: 2rem;
+}
+body main #top-part .inforPart .inforChange .format2 .name div:nth-child(1) {
+  font-size: 2rem;
+}
+body main #top-part .inforPart .inforChange .format2 .name div:nth-child(2) {
+  align-self: end;
+  margin-left: 0.5rem;
+}
+body main #top-part .inforPart .inforChange .format2 .contact-info {
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+body main #top-part .inforPart .inforChange .format2 .resume-video {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+body main #top-part .inforPart .inforChange .format2 .resume-video div:nth-child(2) {
+  margin-left: 1rem;
+}
+body main #top-part .inforPart .inforChange .format2 .resume-video a {
+  color: white;
+  transition: all 0.5s ease;
+}
+body main #top-part .inforPart .inforChange .format2 .resume-video a:hover {
+  color: lightcyan;
+}
+body main #top-part .inforPart .inforChange .format2 .motto {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span {
+  margin-left: 4px;
+  opacity: 0;
+  color: white;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(1) {
+  top: 8px;
+  position: relative;
+  animation: text-appear 3s 0s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(2) {
+  top: 4px;
+  position: relative;
+  animation: text-appear 3s 0.3s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(3) {
+  top: 8px;
+  position: relative;
+  animation: text-appear 3s 0.6s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(4) {
+  top: 4px;
+  position: relative;
+  animation: text-appear 3s 0.9s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(5) {
+  position: relative;
+  animation: text-appear 3s 1.2s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(6) {
+  bottom: 4px;
+  position: relative;
+  animation: text-appear 3s 1.5s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange .format2 .motto span:nth-child(7) {
+  bottom: 8px;
+  position: relative;
+  animation: text-appear 3s 1.8s linear infinite;
+  animation-direction: alternate;
+}
+body main #top-part .inforPart .inforChange:hover .format1 {
+  transform: rotateY(180deg);
+}
+body main #top-part .inforPart .inforChange:hover .format2 {
+  transform: rotateY(0deg);
+}
+body main #top-part .ques-part {
+  flex: 1 1 600px;
+  margin: 1rem 0.5rem;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body main #top-part .ques-part .ques-block {
+  background-color: rgba(240, 255, 255, 0.4);
+  font-size: 1.2em;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  transition: all 0.2s ease;
+}
+body main #top-part .ques-part .ques-block a {
+  color: black;
+}
+body main #top-part .ques-part .ques-block:hover {
+  background-color: rgb(240, 255, 255);
+}
+body main #ans-part {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+body main #ans-part .ansBlock {
+  background-color: #DCDCDC;
+  margin: 0.5rem 0;
+}
+body main #ans-part .ansBlock label {
+  display: flex;
+}
+body main #ans-part .ansBlock label .hamburgerContainer {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+body main #ans-part .ansBlock label .hamburgerContainer:hover {
+  background-color: rgba(39, 39, 39, 0.3);
+  padding: 2px;
+}
+body main #ans-part .ansBlock label .hamburgerContainer div {
+  position: relative;
+  width: 50%;
+  background-color: white;
+  height: 3px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+body main #ans-part .ansBlock label .hamburgerContainer .horizentalLine {
+  margin: 0 auto;
+}
+body main #ans-part .ansBlock label .hamburgerContainer .verticalLine {
+  margin: 10px auto 0 auto;
+}
+body main #ans-part .ansBlock label div.ans {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  flex-grow: 1;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+body main #ans-part .ansBlock .answer {
+  width: 100%;
+}
+body main #ans-part .ansBlock .answer .content {
+  margin: 0.5rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 2px 1px 25px -15px;
+  border-radius: 5px;
+  color: #272727;
+}
+body main #ans-part .ansBlock .answer .content p {
+  margin: 0.5rem 0;
+}
+body main #ans-part .ansBlock .answer .learning-list {
+  margin: 0.5rem 0 0.5rem 3rem;
+}
+body main #ans-part .ansBlock .answer .practicing-list {
+  display: flex;
+  list-style-type: none;
+}
+body main #ans-part .ansBlock .answer .practicing-list li a {
+  color: black;
+  transition: all 0.1s linear;
+}
+body main #ans-part .ansBlock .answer .practicing-list li a:hover {
+  border-bottom: 2px solid skyblue;
+  color: skyblue;
+}
+body main #ans-part .ansBlock .answer .flow-figure {
+  margin-top: 0.5rem;
+}
+body main #ans-part .ansBlock .answer .flow-figure div.block:nth-child(1) {
+  margin-left: 5%;
+  margin-right: 3%;
+}
+body main #ans-part .ansBlock .answer .flow-figure :nth-child(2) {
+  margin-left: 1%;
+  margin-right: 7%;
+}
+body main #ans-part .ansBlock .answer .flow-figure :nth-child(3) {
+  margin-left: 3%;
+  margin-right: 4%;
+}
+body main #ans-part .ansBlock .answer .flow-figure div.block + div.block {
+  margin-top: 1rem;
+}
+body main #ans-part .ansBlock .answer .flow-figure .block {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  transition: all 0.5s ease;
+}
+body main #ans-part .ansBlock .answer .flow-figure .block .circle {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(250, 235, 215);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+body main #ans-part .ansBlock .answer .flow-figure .block .circle-content {
+  background-color: rgba(250, 235, 215, 0.5);
+  width: 100%;
+  margin: 2px 0;
+  position: relative;
+  border-radius: 5px;
+  margin-left: 1rem;
+  height: 4rem;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+body main #ans-part .ansBlock .answer .flow-figure .block .circle-content h5 {
+  align-self: flex-start;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  border-bottom: 2px solid black;
+}
+body main #ans-part .ansBlock .answer .flow-figure .block .circle-content p {
+  padding-left: 1rem;
+}
+body #footer {
+  width: 100%;
+  background-color: #272727;
+  height: 40px;
+  box-shadow: 0px 1px 3px 0px;
+  display: flex;
+  align-items: center;
+}
+body #footer .fa-up-long {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+body #footer .back-btn {
+  margin-left: 0.5rem;
+}
+body #footer .back-btn a {
+  color: white;
+}
+
+.time-schedule {
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.time-schedule .bgc {
+  background-color: #FFF5EE;
+}
+.time-schedule caption {
+  padding-bottom: 0.2rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  text-align: start;
+}
+.time-schedule caption div {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+}
+.time-schedule th {
+  background-color: #FFF5EE;
+  font-weight: alternate;
+}
+.time-schedule td {
+  padding: 5px;
+}
+.time-schedule div {
+  border-radius: 10px;
+  background-color: #F8F8FF;
+}
+.time-schedule .learning {
+  background-color: #FFF8DC;
+}
+.time-schedule .badminton {
+  margin-right: 20px;
+  width: 92%;
+}
+.time-schedule .makeup {
+  transform: translateX(-13%);
+  width: 115%;
+}
+
+#toggler,
+#toggler2,
+#toggler3,
+#toggler4,
+#toggler5,
+#toggler6,
+#toggler7,
+#toggler8 {
+  display: none;
+}
+
+.answer {
+  visibility: hidden;
+  /* 初始隱藏 */
+  max-height: 0;
+  /* 初始高度為 0 */
+  overflow: hidden;
+  /* 隱藏超出部分 */
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+#toggler:checked ~ .answer,
+#toggler2:checked ~ .answer,
+#toggler3:checked ~ .answer,
+#toggler4:checked ~ .answer,
+#toggler5:checked ~ .answer,
+#toggler6:checked ~ .answer,
+#toggler7:checked ~ .answer,
+#toggler8:checked ~ .answer {
+  visibility: visible;
+  /* 顯示並佔據空間 */
+  max-height: 500vh;
+  opacity: 1;
+}
+
+#toggler:checked + label div.horizentalLine,
+#toggler2:checked + label div.horizentalLine,
+#toggler3:checked + label div.horizentalLine,
+#toggler4:checked + label div.horizentalLine,
+#toggler5:checked + label div.horizentalLine,
+#toggler6:checked + label div.horizentalLine,
+#toggler7:checked + label div.horizentalLine,
+#toggler8:checked + label div.horizentalLine {
+  transform: translateY(6.5px);
+}
+
+#toggler:checked + label div.verticalLine,
+#toggler2:checked + label div.verticalLine,
+#toggler3:checked + label div.verticalLine,
+#toggler4:checked + label div.verticalLine,
+#toggler5:checked + label div.verticalLine,
+#toggler6:checked + label div.verticalLine,
+#toggler7:checked + label div.verticalLine,
+#toggler8:checked + label div.verticalLine {
+  transform: translateY(-6.5px);
+}
+
+#toggler:checked + label div.ans,
+#toggler2:checked + label div.ans,
+#toggler3:checked + label div.ans,
+#toggler4:checked + label div.ans,
+#toggler5:checked + label div.ans,
+#toggler6:checked + label div.ans,
+#toggler7:checked + label div.ans,
+#toggler8:checked + label div.ans {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#toggler:checked + label,
+#toggler2:checked + label,
+#toggler3:checked + label,
+#toggler4:checked + label,
+#toggler5:checked + label,
+#toggler6:checked + label,
+#toggler7:checked + label,
+#toggler8:checked + label {
+  box-shadow: 0px 1px 2px 0px silver;
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 845px) {
+  #weHelp {
+    font-size: 0.5rem;
+  }
+  .circle-content p {
+    font-size: 0.6rem;
+  }
+}
+@keyframes bgcChange {
+  0% {
+    background-color: #E0E0E0;
+  }
+  50% {
+    background-color: #F3F3FA;
+  }
+  100% {
+    background-color: #FFF5EE;
+  }
+}/*# sourceMappingURL=styles.css.map */
