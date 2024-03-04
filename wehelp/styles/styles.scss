@@ -608,9 +608,6 @@ body {
 }
 
 @media screen and (max-width:845px) {
-  #weHelp {
-    font-size: 0.5rem;
-  }
 
   .contact-info {
     a {
@@ -621,7 +618,6 @@ body {
   .font-icon {
     font-size: 0.8rem;
 
-
   }
 
   .circle-content {
@@ -630,6 +626,10 @@ body {
     }
   }
 }
+
+
+
+
 
 @keyframes bgcChange {
   0% {

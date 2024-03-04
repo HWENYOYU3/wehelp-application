@@ -492,9 +492,6 @@ body #footer .back-btn a {
   }
 }
 @media screen and (max-width: 845px) {
-  #weHelp {
-    font-size: 0.5rem;
-  }
   .contact-info a {
     font-size: 0.7rem;
   }
