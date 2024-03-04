@@ -115,6 +115,9 @@ body main #top-part .inforPart .inforChange .format2 .resume-video {
 body main #top-part .inforPart .inforChange .format2 .resume-video div:nth-child(2) {
   margin-left: 1rem;
 }
+body main #top-part .inforPart .inforChange .format2 .resume-video div:nth-child(3) {
+  margin-left: 1rem;
+}
 body main #top-part .inforPart .inforChange .format2 .resume-video a {
   color: white;
   transition: all 0.5s ease;
